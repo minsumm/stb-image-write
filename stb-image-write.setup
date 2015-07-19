@@ -1,0 +1,7 @@
+(compile -s -O1 -d1 stb-image-write.scm -j stb-image-write)
+(compile -s stb-image-write.import.scm -O1 -d0)
+
+(install-extension
+  'stb-image-write
+  '("stb-image-write.so" "stb-image-write.import.so")
+  '((version "1.0")))
